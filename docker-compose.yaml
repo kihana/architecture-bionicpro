@@ -48,7 +48,3 @@ services:
       - "8000:8000"
     depends_on:
       - keycloak
-    environment:
-      APP_KEYCLOAK_URL: http://localhost:8080
-      APP_KEYCLOAK_REALM: reports-realm
-      APP_KEYCLOAK_CLIENT_ID: reports-api

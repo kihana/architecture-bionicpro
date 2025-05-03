@@ -7,7 +7,7 @@ WORKDIR /app
 COPY main.py /app
 
 # Install dependencies
-RUN pip install fastapi uvicorn
+RUN pip install fastapi uvicorn python-jose requests pyjwt[crypto] 
 
 # Expose port
 EXPOSE 8000
